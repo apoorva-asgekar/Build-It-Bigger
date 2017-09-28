@@ -13,10 +13,14 @@ public class ShowJokeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_joke);
 
-        Bundle jokeBundle = getIntent().getExtras();
-        String joke = jokeBundle.getString("joke");
-
         mJokeTextView = (TextView) findViewById(R.id.tv_joke_text);
-        mJokeTextView.setText(joke);
+
+        if(getIntent().hasExtra("joke")) {
+            Bundle jokeBundle = getIntent().getExtras();
+            String joke = jokeBundle.getString("joke");
+            mJokeTextView.setText(joke);
+        } else {
+            mJokeTextView.setText(R.string.not_found);
+        }
     }
 }

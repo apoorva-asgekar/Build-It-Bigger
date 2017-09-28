@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DisplayJoke</string>
+    <string name="not_found">Joke not found!</string>
 </resources>
