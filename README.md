@@ -1,3 +1,5 @@
+This app fetches random jokes to make you smile whenever you feel like you could use a little humour.
+
 This project has the following modules in the app:
 1) A java library which supplies jokes.
 2) An android library with an activity to display these jokes received as an intent.
